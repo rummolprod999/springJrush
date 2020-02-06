@@ -9,7 +9,7 @@ import springexample.entities.Parrot;
 import static java.lang.System.out;
 
 public class Main {
-  public static void main(String[] args) {
+  public static void _main(String[] args) {
 
     ApplicationContext context = new AnnotationConfigApplicationContext("springexample.entities");
 
