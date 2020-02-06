@@ -10,16 +10,16 @@ import springexampleconfig.entities.Parrot;
 import static java.lang.System.out;
 
 public class Main {
-    public static void main(String[] args) {
+  public static void _main(String[] args) {
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
+      ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
 
-        Cat cat = context.getBean(Cat.class);
-        Dog dog = (Dog) context.getBean("dog");
-        Parrot parrot = context.getBean("parrot-kesha", Parrot.class);
+      Cat cat = context.getBean(Cat.class);
+      Dog dog = (Dog) context.getBean("dog");
+      Parrot parrot = context.getBean("parrot-kesha", Parrot.class);
 
-        out.println(cat.getName());
-        out.println(dog.getName());
-        out.println(parrot.getName());
-    }
+      out.println(cat.getName());
+      out.println(dog.getName());
+      out.println(parrot.getName());
+  }
 }
