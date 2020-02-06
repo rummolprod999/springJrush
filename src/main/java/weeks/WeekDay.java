@@ -1,5 +1,8 @@
 package weeks;
 
 public interface WeekDay {
-    String getWeekDayName();
+
+    default String getWeekDayName() {
+        return this.getClass().getName().toLowerCase();
+    }
 }
