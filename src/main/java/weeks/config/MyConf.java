@@ -1,6 +1,7 @@
 package weeks.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import weeks.*;
 
@@ -8,6 +9,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 @Configuration
+@ComponentScan("springexample.entities")
 public class MyConf {
     @Bean
     public WeekDay getDay() {
